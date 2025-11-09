@@ -23,6 +23,17 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
+    public static final Block GOLD_CROP = registerBlock("gold_crop",
+            new IronCropBlock(
+                    FabricBlockSettings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
     // 注册方块的方法
     public static Block registerBlock(String id, Block block) {

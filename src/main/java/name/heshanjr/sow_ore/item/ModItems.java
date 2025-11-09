@@ -8,6 +8,7 @@ import name.heshanjr.sow_ore.SowOre;
 import name.heshanjr.sow_ore.block.ModBlocks;
 //import net.minecraft.block.Blocks;
 //为添加原版作物而导入的库
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -21,7 +22,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final  Item IRON_SEEDS = registerItem("iron_seeds", new AliasedBlockItem(ModBlocks.IRON_CROP, new Item.Settings()));
-    //由于还没写相关作物，这里先用原版的小麦
+    public static final  Item GOLD_SEEDS = registerItem("gold_seeds", new AliasedBlockItem(ModBlocks.GOLD_CROP, new Item.Settings()));
+
     public static Item registerItems(String id,Item item){
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(),new Identifier(SowOre.MOD_ID,id)), item);
     }
@@ -47,9 +49,11 @@ public class ModItems {
     }
 
     //private static void addItemToItemGroup(FabricItemGroupEntries entries){
-        //entries.add(IRON_SEEDS);
+       // entries.add(IRON_SEEDS);
+        //entries.add(GOLD_SEEDS);
     //}
     //在原版nature中加入物品，不需要就注释掉
+    //经测试无效，而且已经忘了这是啥了（苦笑）
 
     public static void registerItems() {
         //ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemToItemGroup);

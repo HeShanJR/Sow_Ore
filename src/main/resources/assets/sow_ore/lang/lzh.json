@@ -1,4 +1,5 @@
 {
-  "item.sow_ore.iron_seeds": "铁籽",
+  "item.sow_ore.iron_seeds": "鉄籽",
+  "item.sow_ore.gold_seeds": "金籽",
   "itemGroup.sow_ore_group": "植礦誌"
 }

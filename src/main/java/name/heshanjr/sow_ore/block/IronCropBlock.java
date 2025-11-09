@@ -16,7 +16,7 @@ public class IronCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.IRON_SEEDS; // 确保您已经注册了这个物品
+        return ModItems.IRON_SEEDS;
     }
 
     @Override
